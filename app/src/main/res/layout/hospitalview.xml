@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="30dp"
+        android:background="@drawable/roundhalf"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/hname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="Hospital Name"/>
+
+        <TextView
+            android:id="@+id/hnumber"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Contact Number"/>
+
+        <TextView
+            android:id="@+id/bloodgroup"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Blood Group"/>
+
+        <TextView
+            android:id="@+id/adharCard"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+          android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="AdharCard"/>
+
+        <TextView
+            android:id="@+id/hcity"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="city"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

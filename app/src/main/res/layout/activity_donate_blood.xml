@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonateBlood">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="BLOOD"
+            android:id="@+id/textView"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="BANK"
+            android:id="@+id/textView3"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/colorGray"
+            android:textSize="30dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Management"
+        android:id="@+id/rt"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="3dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorGray"
+        android:textSize="22dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hospital will contact you in case of emergency"
+        android:id="@+id/txt"
+        android:textAlignment="center"
+       android:layout_marginTop="180dp"
+        android:layout_marginLeft="3dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorGray"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:visibility="gone"
+        android:background="@drawable/button_signin_background"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:padding="15dp"
+        android:layout_marginTop="170dp"
+        android:text="Cancel Blood Donation"/>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HospitalMainPage">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="BLOOD"
+            android:id="@+id/textView"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="BANK"
+            android:id="@+id/textView3"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/colorGray"
+            android:textSize="30dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Management"
+        android:id="@+id/rt"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="3dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorGray"
+        android:textSize="22dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:layout_below="@+id/rt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_signin_background"
+        android:textColor="#ffffff"
+        android:text="Logout"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/getlist"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:layout_below="@+id/logout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_signin_background"
+        android:textColor="#ffffff"
+        android:text="Get Donator List In My City"/>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/getlist"
+    android:id="@+id/view2"/>
+
+
+
+</RelativeLayout>
